@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Profile from "../components/profile/profile";
+import Switch from "../components/switch/switch";
 
 import "./App.css"
 
@@ -13,8 +14,9 @@ const App = () => {
     const imgSrc = isLightMode ? imgLightMode : imgDarkMode;
     const imgAlt = isLightMode ? "Imagem no modo claro" : "Imagem no modo escuro"
     return(
-        <div>
+        <div id="container">
         <Profile imgSrc={imgSrc} imgAlt={imgAlt}>@o_chininha</Profile>
+        <Switch></Switch>
      </div>
     )
 };
