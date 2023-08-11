@@ -42,3 +42,11 @@ body{
     margin: 56px auto 0px;
     padding: 0 24px;
 }
+
+#links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Isso seria o espaçamento entre um e outro*/
+    padding: 24px;
+}
